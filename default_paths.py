@@ -24,6 +24,6 @@ def setup_default_paths():
     for key, key_path in globals().items():
         if key not in globalVals:
             print(f'Newly established path: {key} = {key_path}')
-            Path(key_path).mkdir(exist_ok = True)
+            Path(key_path).mkdir(parents=True, exist_ok=True)
 
 
