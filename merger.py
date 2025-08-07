@@ -59,7 +59,7 @@ def merger(files, out, overwrite, nmaps=3):
 if __name__ == "__main__":
 
     # Establish standard output paths
-    default_paths.setup_output_dirs(verbose=False)
+    default_paths.setup_default_paths()
 
     p = argparse.ArgumentParser(
             description='Creates merged map files')
